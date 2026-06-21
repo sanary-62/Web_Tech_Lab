@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="externalcss.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+        form {
+            width: 800px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+   <h1 style="text-decoration: underline;">Registration Form</h1>
+   <form>
+    <label for="name">Full Name:</label> <br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label> <br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="phone">Phone Number:</label> <br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="gender"> Gender : </label> <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label> Date of Birth: </label> <br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="password">Password:</label> <br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm_password">Confirm Password:</label> <br>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <label for="address">Address:</label> <br>
+    <textarea rows="5" cols="30" id="address" name="address" required></textarea><br><br>
+
+    <label for="department">Department:</label> <br>
+    <select id="department" name="department" required>
+        <option value="">Select a department</option>
+        <option value="cse">CSE</option>
+        <option value="eee">EEE</option>
+        <option value="bba">BBA</option>
+        <option value="english">English</option>
+    </select><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+    <input type="submit" value="Register" style="background-color: darkgreen; color: white; border-radius: 10px;">
+    <input type="reset" value="Reset" style="background-color: darkred; color: white; border-radius: 10px;">  
+   </form> 
+</body>
+</html>
